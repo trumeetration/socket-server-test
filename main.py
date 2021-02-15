@@ -5,7 +5,7 @@ sock.bind(('', 9090))
 sock.listen(5)
 conn, addr = sock.accept()
 
-print 'connected:', addr
+print('connected:', addr)
 
 while True:
     data = conn.recv(1024).decode()
